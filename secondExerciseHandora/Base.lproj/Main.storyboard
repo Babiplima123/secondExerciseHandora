@@ -1,24 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="secondExerciseHandora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxj-wa-HKk" userLabel="Label Titulo">
+                                <rect key="frame" x="20" y="68" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-gy-ERK" userLabel="View Container">
+                                <rect key="frame" x="0.0" y="121" width="414" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eW-ZS-5iD" userLabel="View Vacinas">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="140"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vacina" translatesAutoresizingMaskIntoConstraints="NO" id="soK-Q3-U3D" userLabel="Image vacinas">
+                                                <rect key="frame" x="20" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacinas " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNJ-Oa-YPR" userLabel="Label Vacinas">
+                                                <rect key="frame" x="20" y="126" width="92" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wNJ-Oa-YPR" firstAttribute="centerX" secondItem="soK-Q3-U3D" secondAttribute="centerX" id="Bk6-Vs-N8x"/>
+                                            <constraint firstItem="soK-Q3-U3D" firstAttribute="leading" secondItem="5eW-ZS-5iD" secondAttribute="leading" constant="20" id="Dwd-5w-b9q"/>
+                                            <constraint firstItem="wNJ-Oa-YPR" firstAttribute="width" secondItem="soK-Q3-U3D" secondAttribute="width" id="PQL-y0-eXw"/>
+                                            <constraint firstItem="wNJ-Oa-YPR" firstAttribute="top" secondItem="soK-Q3-U3D" secondAttribute="bottom" constant="-2" id="QS4-Ne-J7n"/>
+                                            <constraint firstItem="soK-Q3-U3D" firstAttribute="top" secondItem="5eW-ZS-5iD" secondAttribute="top" id="ayh-Os-ydU"/>
+                                            <constraint firstItem="soK-Q3-U3D" firstAttribute="height" secondItem="5eW-ZS-5iD" secondAttribute="height" multiplier="0.914286" id="cRb-oq-Jf9"/>
+                                            <constraint firstAttribute="trailing" secondItem="soK-Q3-U3D" secondAttribute="trailing" constant="12" id="siJ-Uj-k6S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5eW-ZS-5iD" firstAttribute="leading" secondItem="vm3-gy-ERK" secondAttribute="leading" id="2Nn-Vs-cZA"/>
+                                    <constraint firstAttribute="bottom" secondItem="5eW-ZS-5iD" secondAttribute="bottom" id="bfD-OB-XwP"/>
+                                    <constraint firstItem="5eW-ZS-5iD" firstAttribute="top" secondItem="vm3-gy-ERK" secondAttribute="top" id="eD3-LG-tp1"/>
+                                    <constraint firstItem="5eW-ZS-5iD" firstAttribute="width" secondItem="vm3-gy-ERK" secondAttribute="width" multiplier="0.3" id="nPY-Qk-9dn"/>
+                                    <constraint firstAttribute="height" constant="140" id="wcq-KN-Ywp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycc-ch-KKV" userLabel="View Exames">
+                                <rect key="frame" x="145" y="121" width="124" height="140"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngtree-blood-test-icon-circle-png-image_2044649" translatesAutoresizingMaskIntoConstraints="NO" id="A5l-sO-Ag7" userLabel="Image exames">
+                                        <rect key="frame" x="16" y="0.0" width="92" height="128"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exames" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-6J-gUP" userLabel="Label exames">
+                                        <rect key="frame" x="16" y="126" width="92" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A5l-sO-Ag7" firstAttribute="top" secondItem="ycc-ch-KKV" secondAttribute="top" id="1rR-Xx-WOz"/>
+                                    <constraint firstItem="A5l-sO-Ag7" firstAttribute="leading" secondItem="ycc-ch-KKV" secondAttribute="leading" constant="16" id="7cq-eV-Ty1"/>
+                                    <constraint firstItem="jQ2-6J-gUP" firstAttribute="width" secondItem="A5l-sO-Ag7" secondAttribute="width" id="C7f-ew-yGh"/>
+                                    <constraint firstItem="jQ2-6J-gUP" firstAttribute="centerX" secondItem="A5l-sO-Ag7" secondAttribute="centerX" id="eN8-X6-Fxb"/>
+                                    <constraint firstItem="A5l-sO-Ag7" firstAttribute="height" secondItem="ycc-ch-KKV" secondAttribute="height" multiplier="0.914286" id="jK1-18-g6c"/>
+                                    <constraint firstItem="jQ2-6J-gUP" firstAttribute="top" secondItem="A5l-sO-Ag7" secondAttribute="bottom" constant="-2" id="kTs-iF-q5t"/>
+                                    <constraint firstAttribute="trailing" secondItem="A5l-sO-Ag7" secondAttribute="trailing" constant="16" id="pCi-d8-HtM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FM-gt-WOx" userLabel="View Medicamentos ">
+                                <rect key="frame" x="274" y="121" width="124" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medicamentos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvZ-SO-89i" userLabel="Label exames">
+                                        <rect key="frame" x="6" y="128" width="108" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="medicamentos" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-t7-COU" userLabel="Image exames">
+                                        <rect key="frame" x="16" y="-8" width="92" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vm3-gy-ERK" firstAttribute="top" secondItem="Uxj-wa-HKk" secondAttribute="bottom" constant="24" id="3pE-pp-dha"/>
+                            <constraint firstItem="ycc-ch-KKV" firstAttribute="top" secondItem="5eW-ZS-5iD" secondAttribute="top" id="6te-Bq-hxT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uxj-wa-HKk" secondAttribute="trailing" constant="20" id="8KU-en-uJq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1FM-gt-WOx" secondAttribute="bottom" constant="601" id="Et0-MI-DZZ"/>
+                            <constraint firstItem="Uxj-wa-HKk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N8x-XP-vMS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1FM-gt-WOx" secondAttribute="trailing" constant="16" id="PFF-mq-8KQ"/>
+                            <constraint firstItem="vm3-gy-ERK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pze-lb-nC7"/>
+                            <constraint firstItem="ycc-ch-KKV" firstAttribute="centerX" secondItem="vm3-gy-ERK" secondAttribute="centerX" id="Q0L-Qp-jS2"/>
+                            <constraint firstItem="ycc-ch-KKV" firstAttribute="bottom" secondItem="5eW-ZS-5iD" secondAttribute="bottom" id="Zeo-1O-QsK"/>
+                            <constraint firstItem="1FM-gt-WOx" firstAttribute="leading" secondItem="ycc-ch-KKV" secondAttribute="trailing" constant="5" id="aeX-5v-BTp"/>
+                            <constraint firstItem="Uxj-wa-HKk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="bBZ-Wg-kvf"/>
+                            <constraint firstItem="1FM-gt-WOx" firstAttribute="top" secondItem="ycc-ch-KKV" secondAttribute="top" id="gAz-mk-0Zt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vm3-gy-ERK" secondAttribute="trailing" id="vnc-5b-q7T"/>
+                            <constraint firstItem="ycc-ch-KKV" firstAttribute="width" secondItem="5eW-ZS-5iD" secondAttribute="width" id="ztR-4c-OYQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="medicamentos" width="512" height="512"/>
+        <image name="pngtree-blood-test-icon-circle-png-image_2044649" width="360" height="360"/>
+        <image name="vacina" width="512" height="512"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
